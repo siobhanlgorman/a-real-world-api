@@ -54,7 +54,7 @@ async function postForm(e) {
 }
 
 function displayErrors(data) {
-
+// function displays number of errors
     let heading = `JSHint Results for ${data.file}`;
 
     if (data.total_errors === 0) {
@@ -93,6 +93,7 @@ async function getStatus(e) {
 };
 
 function displayException(data) {
+    // function displays exception code, no. and text
     let heading = `An Exception Occurred`;
     results = `<div>The API returned status code ${data.status_code}</div>`;
     results += `<div>Error number: <strong>${data.error_no}</strong></div>`;
